@@ -1,3 +1,9 @@
+:root {
+  --secondary-color: #7b4ad0;
+  --main-font: "roboto", sans-serif;
+  --secondary-font: "playfair dispaly", serif;
+}
+
 body {
   font-family: "roboto", sans-serif;
   background: black;
@@ -11,6 +17,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 80px 0px;
 }
 
 header {
@@ -24,7 +31,7 @@ header {
 }
 
 h1 {
-  font-family: "playfair display", serif;
+  font-family: var(--secondary-font);
   font-size: 96px;
   line-height: 1.5;
   font-weight: 700;
@@ -46,7 +53,7 @@ h3 {
 }
 
 header a {
-  background: #7b4ad0;
+  background: var(--secondary-color);
   color: white;
   font-size: 16px;
   padding: 12px 24px;
@@ -56,18 +63,40 @@ header a {
   margin-top: 50px;
 }
 
+main {
+  background: white;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main h2 {
+  font-size: 48px;
+  font-family: var(--secondary-font);
+  line-height: 1.5;
+}
+
+main h3 {
+  font-size: 14px;
+  color: var(--secondary-color);
+  display: inline;
+  background: #f4effe;
+  text-transform: uppercase;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../img/bts-footer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 80px 0px;
 }
 
 footer h3 {
-  font-family: "playfair display", serif;
+  font-family: var(--secondary-font);
   letter-spacing: 0;
+  font-size: 24px;
 }
 
 footer ul {
@@ -89,7 +118,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #7b4ad0;
+  color: var(--secondary-color);
   transition: all 0.15s ease-in;
 }
 
@@ -100,8 +129,15 @@ footer p {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 60px;
+}
+
+.grid-2-equal {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 @media (max-width: 800px) {
@@ -125,5 +161,15 @@ footer p {
     font-size: 12px;
     padding: 8px 20px;
     margin-top: 20px;
+  }
+
+  section {
+    padding: 20px 0;
+    margin: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
   }
 }
