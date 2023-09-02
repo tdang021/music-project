@@ -8,6 +8,11 @@ body {
   margin: 0 auto;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/bts-bg.jpeg");
@@ -52,8 +57,45 @@ header a {
 }
 
 footer {
-  margin-top: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bts-footer.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
+  padding: 80px 0px;
+}
+
+footer h3 {
+  font-family: "playfair display", serif;
+  letter-spacing: 0;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  font-size: 16px;
+  line-height: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 @media (max-width: 800px) {
