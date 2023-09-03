@@ -1,7 +1,7 @@
 :root {
   --secondary-color: #7b4ad0;
   --main-font: "roboto", sans-serif;
-  --secondary-font: "playfair dispaly", serif;
+  --secondary-font: "playfair display", serif;
 }
 
 body {
@@ -161,10 +161,34 @@ footer p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.favorite-songs a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+  background: var(--secondary-color);
+  color: white;
+  padding: 9px;
+  border-radius: 18px;
+}
 
 .songs {
   text-align: center;
   color: white;
+}
+
+.songs h2 {
+  font-size: 48px;
+  font-family: var(--secondary-font);
+}
+
+.songs h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.song-info h4 {
+  margin-bottom: 15px;
 }
 
 .card {
@@ -172,6 +196,14 @@ footer p {
   color: black;
   border-radius: 4px;
   margin-top: 40px;
+}
+
+.dashed-line {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.date {
+  margin: 8px 0 18px 0;
 }
 
 .video {
