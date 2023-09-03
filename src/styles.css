@@ -140,6 +140,34 @@ footer p {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3-equal {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.favorite-songs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bts-ptd-seoul.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.songs {
+  text-align: center;
+  color: white;
+}
+
+.card {
+  background: white;
+  color: black;
+  border-radius: 20px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
 @media (max-width: 800px) {
   header {
     padding: 50px 0;
