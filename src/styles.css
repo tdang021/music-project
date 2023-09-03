@@ -52,6 +52,16 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
 header a {
   background: var(--secondary-color);
   color: white;
@@ -141,8 +151,8 @@ footer p {
 }
 
 .grid-3-equal {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 .favorite-songs {
@@ -160,12 +170,21 @@ footer p {
 .card {
   background: white;
   color: black;
-  border-radius: 20px;
+  border-radius: 4px;
+  margin-top: 40px;
 }
 
 .video {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
+}
+
+.song-info {
+  padding: 0px 30px 40px 30px;
+}
+
+.korean-lyrics {
+  opacity: 0.5;
 }
 
 @media (max-width: 800px) {
