@@ -225,6 +225,8 @@ footer p {
 
 .members {
   color: white;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .members h4 {
@@ -297,6 +299,10 @@ footer p {
   .songs h3,
   .members h3 {
     font-size: 11px;
+  }
+
+  .members h4 {
+    font-size: 22px;
   }
 
   .grid {
