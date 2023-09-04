@@ -77,7 +77,7 @@ main {
   background: white;
 }
 
-main img {
+img {
   max-width: 100%;
 }
 
@@ -93,6 +93,7 @@ main h3 {
   display: inline;
   background: #f4effe;
   text-transform: uppercase;
+  padding-left: 4px;
 }
 
 footer {
@@ -185,6 +186,9 @@ footer p {
 .songs h3 {
   font-size: 13px;
   text-transform: uppercase;
+  display: inline;
+  background: #212121;
+  padding-left: 4px;
 }
 
 .song-info h4 {
@@ -219,6 +223,42 @@ footer p {
   opacity: 0.5;
 }
 
+.members {
+  color: white;
+}
+
+.members h4 {
+  text-align: center;
+}
+
+.members-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.members-title h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline;
+  background: #212121;
+  padding-left: 4px;
+}
+
+.members-title h2 {
+  font-size: 48px;
+  font-family: var(--secondary-font);
+}
+
+.members a {
+  color: white;
+  text-decoration: none;
+}
+
+.members a:hover {
+  color: var(--secondary-color);
+  transition: all 0.1s ease-in;
+}
+
 @media (max-width: 800px) {
   header {
     padding: 50px 0;
@@ -245,6 +285,18 @@ footer p {
   section {
     padding: 20px 0;
     margin: 20px;
+  }
+
+  main h2,
+  .songs h2,
+  .members h2 {
+    font-size: 30px;
+  }
+
+  main h3,
+  .songs h3,
+  .members h3 {
+    font-size: 11px;
   }
 
   .grid {
